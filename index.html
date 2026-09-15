@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apple 디자인 시스템(DESIGN-apple.md) 기반 - 1학년 주니어 개발자 김새싹의 개인 포트폴리오">
+  <meta name="author" content="김새싹">
+  <title>김새싹 — 1학년 개발자 포트폴리오</title>
+  <!-- Google Fonts: Inter (SF Pro 최적 대체 폰트, 300 / 400 / 600 / 700) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS 스타일시트 연결 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 스킵 내비게이션 (웹 접근성) -->
+  <a href="#content" class="skip-link">본문 바로가기</a>
+
+  <!-- 상단 글로벌 내비게이션 + 히어로 헤더 (푸른 계열 Deep Midnight Blue 배경 적용) -->
+  <header class="header">
+    <div class="global-nav">
+      <div class="nav-inner">
+        <a href="#" class="nav-brand" aria-label="김새싹 포트폴리오 홈">
+          <span class="brand-symbol" aria-hidden="true"></span>
+          <span class="brand-name">Dev.Saessak</span>
+        </a>
+
+        <!-- 상단 메뉴: ABOUT, PROJECTS, CONTACT -->
+        <nav class="nav" aria-label="메인 내비게이션">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">PROJECTS</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 헤더 히어로 배너: Apple Display Headline 스타일 -->
+    <div class="hero">
+      <div class="hero-container">
+        <span class="hero-eyebrow">Freshman Software Engineer · 2026</span>
+        <h1 class="hero-title">
+          단단한 기본기.<br>거침없는 성장.
+        </h1>
+        <p class="hero-lead">
+          소프트웨어학부 1학년 김새싹입니다. 복잡한 문제를 명쾌하고 우아한 코드로 풀어냅니다.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+          <a href="#about" class="btn btn-secondary-pill">더 알아보기</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 메인 콘텐츠 영역 (교차 타일 레이아웃: Light Canvas ↔ Dark Tile ↔ Parchment) -->
+  <main id="content">
+    <!-- 1. ABOUT 섹션 (Light Canvas Parchment #f5f5f7 & Utility Cards #ffffff) -->
+    <section id="about" class="section section-parchment" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-headline-group">
+          <span class="section-tagline">ABOUT</span>
+          <h2 id="about-heading" class="section-display">순수한 호기심에서 시작된<br>기술적 탐구.</h2>
+          <p class="section-subtext">1학년 동안 배운 컴퓨터 과학 기초와 함께 가치 있는 소프트웨어를 향해 나아갑니다.</p>
+        </div>
+
+        <!-- 3열 스토어 유틸리티 카드 그리드 (rounded: 18px, 1px hairline border) -->
+        <div class="utility-grid">
+          <!-- 카드 1: 프로필 -->
+          <article class="store-utility-card">
+            <div class="card-visual-frame">
+              <div class="symbol-box">👨‍💻</div>
+            </div>
+            <div class="card-content">
+              <span class="card-eyebrow">Background</span>
+              <h3 class="card-title">소프트웨어학부 1학년</h3>
+              <p class="card-desc">
+                26학번 컴퓨터공학 전공생으로 C언어, Python을 통해 컴퓨터의 동작 원리와 메모리 구조를 깊이 있게 배우고 있습니다.
+              </p>
+              <ul class="spec-list">
+                <li><span class="spec-label">전공</span><span class="spec-val">컴퓨터공학 / 소프트웨어</span></li>
+                <li><span class="spec-label">학점 목표</span><span class="spec-val">전공 A+ 수석 도전</span></li>
+                <li><span class="spec-label">관심 분야</span><span class="spec-val">웹 아키텍처, 알고리즘, 시스템</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 카드 2: 기술 스택 -->
+          <article class="store-utility-card">
+            <div class="card-visual-frame">
+              <div class="symbol-box">⚡</div>
+            </div>
+            <div class="card-content">
+              <span class="card-eyebrow">Capabilities</span>
+              <h3 class="card-title">기초 엔지니어링 스택</h3>
+              <p class="card-desc">
+                표준 시맨틱 마크업부터 저수준 C언어 제어까지, 프레임워크에 종속되지 않는 단단한 기초를 만듭니다.
+              </p>
+              <div class="chips-cluster">
+                <span class="option-chip">HTML5 / Web Standard</span>
+                <span class="option-chip">CSS3 / Responsive</span>
+                <span class="option-chip">C Programming</span>
+                <span class="option-chip">Python Logic</span>
+                <span class="option-chip">Git / GitHub CLI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 카드 3: 비전과 철학 -->
+          <article class="store-utility-card">
+            <div class="card-visual-frame">
+              <div class="symbol-box">🎯</div>
+            </div>
+            <div class="card-content">
+              <span class="card-eyebrow">Philosophy</span>
+              <h3 class="card-title">완성도를 향한 집착</h3>
+              <p class="card-desc">
+                Apple 디자인처럼 군더더기 없는 인터페이스와 한 줄 한 줄 정갈하게 다듬어진 코드가 사용자에게 최고의 경험을 준다고 믿습니다.
+              </p>
+              <div class="card-stat-box">
+                <div class="stat-item">
+                  <span class="stat-number">100%</span>
+                  <span class="stat-caption">순수 웹 표준 준수</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">365</span>
+                  <span class="stat-caption">1일 1커밋 목표</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PROJECTS 섹션 (Apple Signature Dark Tile #272729 & Product Shadow) -->
+    <section id="projects" class="section section-dark-tile" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-headline-group on-dark">
+          <span class="section-tagline on-dark">PROJECTS</span>
+          <h2 id="projects-heading" class="section-display on-dark">만든 이의 손끝에서 탄생한<br>첫 번째 결과물.</h2>
+          <p class="section-subtext on-dark">화면의 군더더기를 덜어내고 작품 본연의 완성도를 보여주는 3개의 핵심 프로젝트.</p>
+        </div>
+
+        <div class="product-tile-grid">
+          <!-- 프로젝트 1: 포트폴리오 웹사이트 -->
+          <article class="product-gallery-tile">
+            <div class="tile-preview-canvas">
+              <div class="mockup-artwork">
+                <div class="screen-frame">
+                  <span class="screen-indicator"></span>
+                  <div class="screen-art">
+                    <span class="art-code">&lt;portfolio /&gt;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tile-meta">
+              <span class="tile-kicker">Web Engineering</span>
+              <h3 class="tile-headline">순수 HTML & CSS 반응형 웹</h3>
+              <p class="tile-summary">
+                자바스크립트나 외부 라이브러리 없이 순수 웹 표준만으로 완성한 반응형 포트폴리오입니다. Apple의 네거티브 레터 스페이싱, 정밀한 17px 본문 리딩 스케일, 그리고 풀블리드 타일 교차 리듬을 직접 구현했습니다.
+              </p>
+              <div class="tile-tech-row">
+                <span class="tech-tag">HTML5 Semantic</span>
+                <span class="tech-tag">Pure CSS3</span>
+                <span class="tech-tag">Apple Design System</span>
+              </div>
+              <div class="tile-actions">
+                <a href="#about" class="text-link-on-dark">자세히 보기 <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 프로젝트 2: C언어 콘솔 RPG -->
+          <article class="product-gallery-tile">
+            <div class="tile-preview-canvas">
+              <div class="mockup-artwork">
+                <div class="screen-frame dark-screen">
+                  <span class="screen-indicator"></span>
+                  <div class="screen-art">
+                    <span class="art-code">main.c : 0 errors</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tile-meta">
+              <span class="tile-kicker">Systems & Algorithms</span>
+              <h3 class="tile-headline">C언어 텍스트 콘솔 RPG 엔진</h3>
+              <p class="tile-summary">
+                1학기 C언어 프로그래밍 수업 기말 프로젝트로 제작한 턴제 텍스트 기반 롤플레잉 게임입니다. 동적 메모리 할당(`malloc`/`free`), 포인터 구조체, 바이너리 파일 입출력으로 캐릭터 데이터 저장 및 로드 기능을 완벽 구현했습니다.
+              </p>
+              <div class="tile-tech-row">
+                <span class="tech-tag">C Language</span>
+                <span class="tech-tag">Pointers & Memory</span>
+                <span class="tech-tag">File System I/O</span>
+              </div>
+              <div class="tile-actions">
+                <span class="badge-award">과제전 최우수 선정 🏆</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 프로젝트 3: 동아리 랜딩페이지 -->
+          <article class="product-gallery-tile">
+            <div class="tile-preview-canvas">
+              <div class="mockup-artwork">
+                <div class="screen-frame accent-screen">
+                  <span class="screen-indicator"></span>
+                  <div class="screen-art">
+                    <span class="art-code">git branch -M main</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tile-meta">
+              <span class="tile-kicker">Collaboration</span>
+              <h3 class="tile-headline">교내 개발 동아리 공식 웹사이트</h3>
+              <p class="tile-summary">
+                동기들과 팀을 이루어 제작한 프로그래밍 동아리 신입 부원 모집용 랜딩 페이지입니다. Git Flow 브랜치 전략을 통해 코드 충돌을 해결하며 성공적인 협업 문화를 경험했습니다.
+              </p>
+              <div class="tile-tech-row">
+                <span class="tech-tag">Git / GitHub</span>
+                <span class="tech-tag">Team Collaboration</span>
+                <span class="tech-tag">Responsive UI</span>
+              </div>
+              <div class="tile-actions">
+                <span class="badge-award">신입 부원 40명 등록 완료</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CONTACT 섹션 (Pure White Canvas #ffffff & Pill Form Components) -->
+    <section id="contact" class="section section-canvas" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-headline-group">
+          <span class="section-tagline">CONTACT</span>
+          <h2 id="contact-heading" class="section-display">새로운 가능성을 위한 대화.</h2>
+          <p class="section-subtext">스터디, 멘토링, 사이드 프로젝트, 또는 커피챗 제안 모두 환영합니다.</p>
+        </div>
+
+        <div class="contact-dual-column">
+          <!-- 연락처 안내 유틸리티 카드 -->
+          <div class="contact-meta-card">
+            <h3 class="meta-card-title">Connect with me</h3>
+            <p class="meta-card-desc">
+              언제든 편한 채널로 소통할 수 있습니다. 메일은 24시간 이내에 회신드립니다.
+            </p>
+
+            <ul class="contact-channel-list">
+              <li class="channel-row">
+                <span class="channel-label">Email</span>
+                <a href="mailto:saessak.dev@example.com" class="text-link">saessak.dev@example.com</a>
+              </li>
+              <li class="channel-row">
+                <span class="channel-label">GitHub</span>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-link">github.com/saessak-dev ↗</a>
+              </li>
+              <li class="channel-row">
+                <span class="channel-label">Tech Blog</span>
+                <a href="https://velog.io" target="_blank" rel="noopener noreferrer" class="text-link">velog.io/@saessak-dev ↗</a>
+              </li>
+              <li class="channel-row">
+                <span class="channel-label">Location</span>
+                <span class="channel-plain">Seoul, Republic of Korea</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 문의 폼 (애플 스타일의 정갈한 폼) -->
+          <div class="contact-form-panel">
+            <h3 class="meta-card-title">Send a Message</h3>
+            <form class="apple-form" action="#" method="post">
+              <div class="input-field">
+                <label for="contact-name" class="field-label">이름 <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="contact-name" name="name" class="search-input" placeholder="성함을 입력해주세요" required>
+              </div>
+
+              <div class="input-field">
+                <label for="contact-email" class="field-label">이메일 <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="contact-email" name="email" class="search-input" placeholder="답변받으실 이메일 주소" required>
+              </div>
+
+              <div class="input-field">
+                <label for="contact-message" class="field-label">메시지 내용 <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="프로젝트 제안이나 궁금하신 점을 작성해주세요." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">메시지 보내기</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터: Apple Signature Parchment #f5f5f7 Footer (64px padding, 12px fine-print) -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-legal">
+        <p class="legal-paragraph">
+          1. 이 웹사이트는 1학년 주니어 개발자 김새싹의 개인 포트폴리오이며, Apple 디자인 시스템 레퍼런스(DESIGN-apple.md)의 시각 언어, 타이포그래피, 컬러 및 레이아웃 원칙을 준수하여 구현되었습니다.
+        </p>
+        <p class="legal-paragraph">
+          2. SF Pro 계열 글꼴의 특성을 웹 표준 Inter 글꼴과 -0.01em 네거티브 레터 스페이싱으로 충실히 재현했습니다.
+        </p>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-line">Copyright © 2026 김새싹 (Saessak Kim). All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="#about" class="footer-link-item">About</a></li>
+          <li><a href="#projects" class="footer-link-item">Projects</a></li>
+          <li><a href="#contact" class="footer-link-item">Contact</a></li>
+          <li><a href="#" class="footer-link-item back-top">맨 위로 이동 ↑</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
